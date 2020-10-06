@@ -36,7 +36,6 @@ def webServer(port=13331):
             #Send response message for file not found (404)
 
             connectionSocket.send(bytes("HTTP/1.1 404 Not Found \r\n\r\n", "UTF-8"))
-            connectionSocket.send(bytes("<html><head></head><body><h1>404 Not Found</h1></body></html>\r\n", "UTF-8"))
 
 
             #Close client socket
